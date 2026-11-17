@@ -5,6 +5,7 @@ description = "ML-powered League of Legends draft pick recommender"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "boto3>=1.44.4",
     "duckdb>=2.0.0",
     "pandas>=3.1.1",
     "pyarrow>=26.0.1",

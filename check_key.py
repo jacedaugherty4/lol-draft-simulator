@@ -1,6 +1,4 @@
-import os
+from config import get_riot_api_key
 
-from dotenv import load_dotenv
-
-load_dotenv()
-print(os.getenv("RIOT_API_KEY") is not None)
+key = get_riot_api_key()
+print(f"Got key, length {len(key)}, ends in ...{key[-4:]}")
